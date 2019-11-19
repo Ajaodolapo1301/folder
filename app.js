@@ -5,13 +5,11 @@ const app=express()
 const authRoute = require("./routes/api/auth")
 const userRoute = require("./routes/api/user")
 const staffRoute = require("./routes/api/staff")
-// const fileUpload = require("express-fileupload")
 const path = require("path")
 const config  = require("./config/secret")
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
-// app.use(fileUpload())cd
 
 
 
